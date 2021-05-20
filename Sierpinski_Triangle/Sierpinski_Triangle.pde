@@ -4,10 +4,11 @@
  * Licence : CC0 1.0 Universal
  * Licence url : http://creativecommons.org/publicdomain/zero/1.0/
 */
+// vgl. https://openprocessing.org/sketch/17026/#
 int w = 0, h = 0;
 void setup()
 {
-  size(800,800);
+  size(800,700);
   surface.setTitle("Sierpinski triangle");
   surface.setResizable(true);
   background(200);  
@@ -15,7 +16,7 @@ void setup()
      noStroke();
      colorMode(HSB, 8, 100, 100);
      background(200);
-     triangleSier(0, 700, 400, 0, 800, 700, 10);
+     triangleSier(50, height - 50, width / 2, 50, width - 50, height - 50, 10);
   //noLoop();
 }
 
