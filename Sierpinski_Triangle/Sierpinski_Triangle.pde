@@ -28,7 +28,7 @@ void draw() {
      noStroke();
      colorMode(HSB, 8, 100, 100);
      background(200);
-     triangleSier(0, 700, 400, 0, 800, 700, 10);
+     triangleSier(50, height - 50, width / 2, 50, width - 50, height - 50, 10);
   }
 }
  
